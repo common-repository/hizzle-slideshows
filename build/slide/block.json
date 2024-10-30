@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "hizzle-slideshows/slide",
+  "title": "Slide",
+  "description": "Displays a single slide in a slideshow.",
+  "category": "design",
+  "keywords": [
+    "slideshow",
+    "slide",
+    "testimonial",
+    "quote",
+    "gallery"
+  ],
+  "icon": "media-default",
+  "parent": [
+    "hizzle-slideshows/slideshow"
+  ],
+  "version": "1.0.0",
+  "textdomain": "hizzle-slideshows",
+  "attributes": {},
+  "supports": {
+    "anchor": true,
+    "align": false,
+    "alignWide": false,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "typography": {
+      "fontSize": true,
+      "lineHeight": true
+    },
+    "reusable": false,
+    "spacing": {
+      "padding": true
+    }
+  },
+  "editorScript": "file:./index.js"
+}

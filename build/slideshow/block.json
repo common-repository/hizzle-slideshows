@@ -1,0 +1,62 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 2,
+  "name": "hizzle-slideshows/slideshow",
+  "title": "Slideshow",
+  "description": "Displays a slideshow of images, testimonials, or other content",
+  "category": "design",
+  "keywords": [
+    "slideshow",
+    "slide",
+    "testimonial",
+    "quote",
+    "gallery"
+  ],
+  "icon": "admin-page",
+  "version": "1.0.0",
+  "textdomain": "hizzle-slideshows",
+  "attributes": {
+    "slidesPerView": {
+      "type": "number",
+      "default": 1
+    },
+    "showArrows": {
+      "type": "boolean",
+      "default": true
+    },
+    "pagination": {
+      "type": "boolean",
+      "default": true
+    },
+    "autoplay": {
+      "type": "boolean",
+      "default": true
+    },
+    "isVertical": {
+      "type": "boolean",
+      "default": false
+    },
+    "type": {
+      "type": "string",
+      "default": "slide"
+    }
+  },
+  "supports": {
+    "anchor": true,
+    "align": true,
+    "ariaLabel": true,
+    "color": {
+      "gradients": true,
+      "link": true
+    },
+    "dimensions": {
+      "minHeight": true
+    },
+    "spacing": {
+      "margin": true
+    }
+  },
+  "editorScript": "file:./index.js",
+  "script": "file:./view.js",
+  "style": "file:./view.css"
+}
